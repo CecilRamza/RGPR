@@ -4,11 +4,13 @@
 ## Bug reports
 
 1. **Make sure your are working with the latest version of `RGPR`.**
+
 2. **Create a short and simple reproducible example.**
     You can use the GPR data from `RGPR`: `frenkeLine00`, e.g.,
     ```r
     x <- dcshift(frenkeLine00, u = 1:25)
     ```
+    
 3. **Open a new issue on github.**
     Make sure that the title is clear as well as informative, the
     problem is well described, and don't forget to include a reproducible

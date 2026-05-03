@@ -228,7 +228,8 @@ deconvolve <- function(y, h, mu = 0.0001, type = c("matrix", "FFT"),
         dim(h) <- c(length(h), 1)
       }
       if(ncol(h) < ncol(y)){
-        # FIXME -> mabye w <- w[, 1] would be enough
+        # FIXME 
+        # -> mabye w <- w[, 1] would be enough
         h <- repmat(h[, 1, drop = FALSE], 1, ncol(y)) 
       }
       if(nrow(h) > nrow(y)){

@@ -11,7 +11,7 @@ Authors@R: c(
   role = "aut"))
 Author: Emanuel Huber and Guillaume Hans
 Maintainer: Emanuel Huber <emanuel.huber@pm.me>
-Description: S4 classes and R functions to read, write, analyse and visualise
+Description: R Package to read, write, analyse and visualize
     ground-penetrating radar (GPR) data.
 Depends:
 	base,

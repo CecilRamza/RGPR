@@ -3,7 +3,8 @@
 **If you have any questions, comments or suggestions, feel free to contact me (in English, French or German):**
 **emanuel.huber@pm.me**
 
-> I am developing this package on my free time as a gift to the GPR community. Any support will be appreciated! 
+> I am developing this package on my free time as a gift to the GPR community. 
+> Any support will be appreciated! 
 
 
 [![](https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png)](https://www.buymeacoffee.com/EmanuelHuber)

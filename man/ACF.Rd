@@ -3,7 +3,7 @@
 \name{ACF}
 \alias{ACF}
 \alias{CCF}
-\title{Auto-correlation function}
+\title{Auto-Correlation and Cross-Covariance Function Estimation}
 \usage{
 \S4method{ACF}{GPR}(
   x,
@@ -24,6 +24,31 @@
   ...
 )
 }
+\arguments{
+\item{x}{An object of class \code{GPR}.}
+
+\item{lag.max}{Maximum lag at which to calculate the acf. Default is 100. 
+Must be less than or equal to the number of rows in \code{x}.}
+
+\item{type}{Character string giving the type of acf to be computed. 
+Allowed values are \code{"correlation"} (default), \code{"covariance"}, 
+or \code{"partial"}.}
+
+\item{MARGIN}{A vector giving the subscripts which the function will be applied over. 
+E.g., for a matrix, \code{1} indicates rows, \code{2} indicates columns. Default is 2.}
+
+\item{na.action}{Function to be called to handle missing values. Default is \code{na.fail}.}
+
+\item{demean}{Logical. Should the covariances be about the sample means? Default is \code{TRUE}.}
+
+\item{...}{Additional arguments passed to \code{\link[stats]{acf}}.}
+}
+\value{
+An object of class \code{GPR} where the data contains the ACF values, 
+  the depth axis represents the lags, and \code{dz} is set to 1.
+}
 \description{
-This function computes the auto-correlation function.
+Computes the auto-correlation or cross-covariance sequences 
+for `GPR` objects. This is a wrapper around the base \code{\link[stats]{acf}} 
+applied across the specified margin of the GPR data.
 }
