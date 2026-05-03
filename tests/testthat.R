@@ -1,6 +1,6 @@
 library(testthat)
 library(RGPR)
 
-# testing
+# testing - Not yet working
 test_check("RGPR")
 

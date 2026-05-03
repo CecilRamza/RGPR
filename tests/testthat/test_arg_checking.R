@@ -1,4 +1,4 @@
-context("Argument + @proc checking")
+context("Argument + @proc checking.")
 library(RGPR)
 
 # devtools::test()
